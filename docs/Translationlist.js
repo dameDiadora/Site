@@ -16,8 +16,8 @@ function Translationlist() {
 
         var CSV, CSVLen, j, k, l;
         var CSV = $.get("../" + CSVList[i] + ".csv", function(csv) {
-            var CSV = csv.split(",");
-            return CSV;
+            // var CSV = csv.split(",");
+            return csv;
         });
         // CSV = ["1","2","3","4","5","6"]
     
@@ -28,7 +28,7 @@ function Translationlist() {
     
         for (j=0; j<3; j++) {
             var tableHeader = document.createElement("th");
-            var headerContent = document.createTextNode(CSV[j]);
+            var headerContent = document.createTextNode(CSV);
             tableHeader.appendChild(headerContent);
             tableRow.appendChild(tableHeader);
         }
