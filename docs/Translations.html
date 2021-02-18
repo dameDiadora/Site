@@ -3,15 +3,23 @@
         <title>
             Translations
         </title>
+
         <link rel="stylesheet" href="layout.css" type="text/css">
         <link rel="icon" href="icon.jpeg" type="image/icon type">
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="Translationlist.js"></script>
         <script>
-        function displayCSV(){
-            break
-            }
+            $(document).ready(function(){
+                $("h1").click(function(){
+                    $(this).siblings().toggle();
+                });
+            });
+            $(document).ready(function(){
+                $("table").hide();
+            });
         </script>
     </head>
+
     <nav>
         <a href="Index.html">Home</a>
         <a href="Translations.html">My translations</a>
@@ -19,11 +27,12 @@
 
 
     <body>
-        <section id="List"></section>
+        <section id="List">
+            <script>
+                Translationlist();
+            </script>
+        </section>
 
-        <script>
-            document.getElementById("List").innerHTML = "fbajfb";
-        </script>
     </body>
 
 </html>
