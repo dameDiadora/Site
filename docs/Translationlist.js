@@ -20,8 +20,8 @@ function Translationlist() {
             return csv;
         });
         CSV = ["1","2","3","4","5","6"]  */
-        let FileReader = FileReader();
-        var csv = FileReader.readAsBinaryString("../アトヲニゴサズ.csv");
+        let reader = new FileReader();
+        var csv = reader.readAsBinaryString("../アトヲニゴサズ.csv");
         // var CSV = csv.split(",");
         CSVLen = CSV.length;
     
