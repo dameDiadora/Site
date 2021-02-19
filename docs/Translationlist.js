@@ -14,13 +14,15 @@ function Translationlist() {
         itemHeader.appendChild(item);
         section.appendChild(itemHeader);
 
-        var CSV, CSVLen, j, k, l;
-        var CSV = $.get("../アトヲニゴサズ.csv", function(csv) {
+        var CSV, csv, CSVLen, j, k, l;
+        /* var CSV = $.get("../アトヲニゴサズ.csv", function(csv) {
             // var CSV = csv.split(",");
             return csv;
         });
-        // CSV = ["1","2","3","4","5","6"]
-    
+        CSV = ["1","2","3","4","5","6"]  */
+        let FileReader = FileReader();
+        var csv = FileReader.readAsBinaryString("../アトヲニゴサズ.csv");
+        // var CSV = csv.split(",");
         CSVLen = CSV.length;
     
         var table = document.createElement("table");
