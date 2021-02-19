@@ -15,7 +15,7 @@ function Translationlist() {
         section.appendChild(itemHeader);
 
         var CSV, csv, CSVLen, j, k, l;
-        var CSV = $.get("../アトヲニゴサズ.csv", function(csv) {
+        var CSV = $.get("../アトヲニゴサズ.csv", function(csv) {
             var CSV = csv.split('\n');
             return CSV;
         });
