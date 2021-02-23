@@ -10,8 +10,10 @@
         <script type="text/javascript" src="Translationlist.js"></script>
         <script>
             $(document).ready(function(){
-                $("h1").click(function(){
-                    $(this).siblings().toggle();
+                $("h2").click(function(){
+                    $(this).siblings("table").toggle();
+                    $(this).parent().toggleClass("open");
+                    $(this).parent().toggleClass("closed");
                 });
             });
             $(document).ready(function(){
@@ -27,6 +29,19 @@
 
 
     <body>
+        <section id="preamble">
+            <p>
+                This is where I host song translations. <br>
+                You can click on one of the song titles to show a table
+                 with the translation. <br>
+                I am not fluent in Japanese so translations may be
+                 inacurrate, feedback is appreciated. <br>
+                All translations are published under the Creative Commons 
+                Attribution-Share Alike License, which means
+                 you are fine to use them so long as you credit me (dameDiadora). 
+            </p>
+        </section>
+
         <section id="List">
             <script>
                 Translationlist();

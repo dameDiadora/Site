@@ -1,8 +1,8 @@
+/* General */
 body
 	{
-	background-color:#1c1c1c;
+	background-color:#111111;
 	color:#bbbbbb;
-	font-weight:bold;
 	font-family:"Helvetica", sans-serif;
 	}
 
@@ -13,39 +13,70 @@ nav a
 	font-family:"Helvetica", sans-serif;
 	color:#bbbbbb;
 	font-size:auto;
+	margin: 5px;
 	}
 
 nav
 	{
 	margin:auto;
 	font-weight:bold;
-	border-radius: 5%;
-	border: 2px solid #cccccc;
+	border-radius: 3%;
+	border: 2px solid #bbbbbb;
 	width:max-content;
 	padding:5px;
 	}
 
-#list section
+#preamble
 	{
-	border-radius: 2%;
+	max-width:550px;
+	}
+/* Transaltions */
+#list section.closed
+	{
+	margin: 15px;
+	width:max-content;
+	}
+
+#list section.open 
+	{
+	margin: 15px;
+	border-radius: 1%;
+	border: 2px solid #bbbbbb;
 	}
 
 #list section h1
 	{
-	padding:3px;
+	padding:0px;
 	width:max-content;
-	border: 2px solid #cccccc;
-	border-radius: 5%;
+	text-align: center;
+	margin: 3px;
+	}
+
+#list section h2
+	{
+	margin: 3px;
+	padding:2px;
+	width:max-content;
+	border: 2px solid #bbbbbb;
+	border-radius: 4%;
 	text-align: center;
 	}
 
 #list section table
 	{
 	empty-cells:show;
-	border: 1px solid #cccccc;
+	border: 1px solid #bbbbbb;
+	margin: 3px;
 	}
 
 #list section table th
 	{
-	border: 1px solid #cccccc;
+	border: 1px solid #bbbbbb;
 	}
+
+#list section table #noteHeader
+	{
+	font-weight:bold;
+	font-size:larger;
+	}
+/* */
