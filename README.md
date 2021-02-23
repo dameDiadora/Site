@@ -1,4 +1,4 @@
-This is were I host song translations.
+This is where I host the site where song translations.
 
 I am not fluent in Japanese so translations may be inacurrate, feedback is appreciated.
 
